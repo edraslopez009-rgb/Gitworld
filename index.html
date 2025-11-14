@@ -1,110 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitWorld</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repository List | Gitworld</title>
 
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
 
-        /* NAVBAR */
-        nav {
-            background-color: #161b22;
-            padding: 15px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #30363d;
-        }
-
-        nav .logo {
-            font-size: 22px;
-            font-weight: bold;
-            color: #58a6ff;
-            text-decoration: none;
-        }
-
-        nav .nav-links a {
-            color: #c9d1d9;
-            margin-left: 20px;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        nav .nav-links a:hover {
-            color: #58a6ff;
-        }
-
-        /* HERO SECTION */
-        .hero {
+        header {
+            background: #24292e;
+            padding: 20px;
             text-align: center;
-            padding: 100px 20px;
         }
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #ffffff;
-        }
-
-        .hero p {
-            font-size: 20px;
-            color: #8b949e;
-            margin-bottom: 40px;
-        }
-
-        .hero button {
-            background-color: #238636;
-            border: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            border-radius: 6px;
+        header h1 {
             color: white;
-            cursor: pointer;
+            margin: 0;
+            font-size: 28px;
         }
 
-        .hero button:hover {
-            background-color: #2ea043;
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #8b949e;
+        .repo {
+            padding: 15px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .repo:last-child {
+            border-bottom: none;
+        }
+
+        .repo h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .repo a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+
+        .repo a:hover {
+            text-decoration: underline;
+        }
+
+        .description {
+            color: #555;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <a class="logo" href="#">GitWorld</a>
-        <div class="nav-links">
-            <a href="#">Explore</a>
-            <a href="#">Repositories</a>
-            <a href="#">Login</a>
-            <a href="#">Sign Up</a>
-        </div>
-    </nav>
+<header>
+    <h1>Gitworld — Repository List</h1>
+</header>
 
-    <!-- MAIN HERO -->
-    <div class="hero">
-        <h1>Welcome to GitWorld</h1>
-        <p>A developer paradise. Share code, collaborate, and build the future.</p>
-        <button>Get Started</button>
+<div class="container">
+
+    <!-- Example Repo Item -->
+    <div class="repo">
+        <h2><a href="https://github.com/edraslopez009-rgb/Gitworld" target="_blank">Gitworld</a></h2>
+        <p class="description">Main project repository containing the index and core files.</p>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        © 2025 GitWorld. Not affiliated with GitHub.
-    </footer>
+    <div class="repo">
+        <h2><a href="https://github.com/edraslopez009-rgb" target="_blank">User Profile</a></h2>
+        <p class="description">View all repositories in the GitHub account.</p>
+    </div>
+
+    <!-- Add more repos here -->
+    <div class="repo">
+        <h2><a href="#" target="_blank">Repository Name</a></h2>
+        <p class="description">Short description of what this repository contains.</p>
+    </div>
+
+</div>
 
 </body>
 </html>
